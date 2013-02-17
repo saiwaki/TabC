@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UIActionSheetDelegate> {
+    UIActionSheet *as;
+    UIAlertView *av;
+}
+
+- (IBAction)modalButton:(id)sender;
+- (IBAction)nextButton:(id)sender;
+- (IBAction)acionsheetButton:(id)sender;
+- (IBAction)alertButton:(id)sender;
+
+
 
 @end

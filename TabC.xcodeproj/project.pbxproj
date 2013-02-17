@@ -24,6 +24,16 @@
 		2FF70A1F16CF75E40072D2B5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A1E16CF75E40072D2B5 /* second@2x.png */; };
 		2FF70A2216CF75E40072D2B5 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A2016CF75E40072D2B5 /* FirstViewController.xib */; };
 		2FF70A2516CF75E40072D2B5 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A2316CF75E40072D2B5 /* SecondViewController.xib */; };
+		2FF70A3A16CF888D0072D2B5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF70A3816CF888C0072D2B5 /* ThirdViewController.m */; };
+		2FF70A3B16CF888D0072D2B5 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A3916CF888C0072D2B5 /* ThirdViewController.xib */; };
+		2FF70A3F16CF88C10072D2B5 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF70A3D16CF88C10072D2B5 /* FourViewController.m */; };
+		2FF70A4016CF88C10072D2B5 /* FourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A3E16CF88C10072D2B5 /* FourViewController.xib */; };
+		2FF70A4416CF9B710072D2B5 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF70A4216CF9B700072D2B5 /* FiveViewController.m */; };
+		2FF70A4516CF9B710072D2B5 /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A4316CF9B700072D2B5 /* FiveViewController.xib */; };
+		2FF70A4D16CFA26C0072D2B5 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF70A4B16CFA26B0072D2B5 /* SixViewController.m */; };
+		2FF70A4E16CFA26C0072D2B5 /* SixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A4C16CFA26B0072D2B5 /* SixViewController.xib */; };
+		2FF70A5216CFA4140072D2B5 /* SevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF70A5016CFA4130072D2B5 /* SevenViewController.m */; };
+		2FF70A5316CFA4140072D2B5 /* SevenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF70A5116CFA4130072D2B5 /* SevenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +60,21 @@
 		2FF70A1E16CF75E40072D2B5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		2FF70A2116CF75E40072D2B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		2FF70A2416CF75E40072D2B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		2FF70A3716CF888C0072D2B5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		2FF70A3816CF888C0072D2B5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		2FF70A3916CF888C0072D2B5 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		2FF70A3C16CF88C00072D2B5 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		2FF70A3D16CF88C10072D2B5 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		2FF70A3E16CF88C10072D2B5 /* FourViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourViewController.xib; sourceTree = "<group>"; };
+		2FF70A4116CF9B700072D2B5 /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		2FF70A4216CF9B700072D2B5 /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		2FF70A4316CF9B700072D2B5 /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
+		2FF70A4A16CFA26A0072D2B5 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
+		2FF70A4B16CFA26B0072D2B5 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
+		2FF70A4C16CFA26B0072D2B5 /* SixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixViewController.xib; sourceTree = "<group>"; };
+		2FF70A4F16CFA4120072D2B5 /* SevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenViewController.h; sourceTree = "<group>"; };
+		2FF70A5016CFA4130072D2B5 /* SevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenViewController.m; sourceTree = "<group>"; };
+		2FF70A5116CFA4130072D2B5 /* SevenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SevenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +125,29 @@
 				2FF70A0A16CF75E40072D2B5 /* AppDelegate.m */,
 				2FF70A1216CF75E40072D2B5 /* FirstViewController.h */,
 				2FF70A1316CF75E40072D2B5 /* FirstViewController.m */,
-				2FF70A1516CF75E40072D2B5 /* first.png */,
-				2FF70A1716CF75E40072D2B5 /* first@2x.png */,
+				2FF70A2016CF75E40072D2B5 /* FirstViewController.xib */,
 				2FF70A1916CF75E40072D2B5 /* SecondViewController.h */,
 				2FF70A1A16CF75E40072D2B5 /* SecondViewController.m */,
+				2FF70A2316CF75E40072D2B5 /* SecondViewController.xib */,
+				2FF70A3716CF888C0072D2B5 /* ThirdViewController.h */,
+				2FF70A3816CF888C0072D2B5 /* ThirdViewController.m */,
+				2FF70A3916CF888C0072D2B5 /* ThirdViewController.xib */,
+				2FF70A3C16CF88C00072D2B5 /* FourViewController.h */,
+				2FF70A3D16CF88C10072D2B5 /* FourViewController.m */,
+				2FF70A3E16CF88C10072D2B5 /* FourViewController.xib */,
+				2FF70A4116CF9B700072D2B5 /* FiveViewController.h */,
+				2FF70A4216CF9B700072D2B5 /* FiveViewController.m */,
+				2FF70A4316CF9B700072D2B5 /* FiveViewController.xib */,
+				2FF70A4A16CFA26A0072D2B5 /* SixViewController.h */,
+				2FF70A4B16CFA26B0072D2B5 /* SixViewController.m */,
+				2FF70A4C16CFA26B0072D2B5 /* SixViewController.xib */,
+				2FF70A4F16CFA4120072D2B5 /* SevenViewController.h */,
+				2FF70A5016CFA4130072D2B5 /* SevenViewController.m */,
+				2FF70A5116CFA4130072D2B5 /* SevenViewController.xib */,
+				2FF70A1516CF75E40072D2B5 /* first.png */,
+				2FF70A1716CF75E40072D2B5 /* first@2x.png */,
 				2FF70A1C16CF75E40072D2B5 /* second.png */,
 				2FF70A1E16CF75E40072D2B5 /* second@2x.png */,
-				2FF70A2016CF75E40072D2B5 /* FirstViewController.xib */,
-				2FF70A2316CF75E40072D2B5 /* SecondViewController.xib */,
 				2FF70A0116CF75E40072D2B5 /* Supporting Files */,
 			);
 			path = TabC;
@@ -188,6 +228,11 @@
 				2FF70A1F16CF75E40072D2B5 /* second@2x.png in Resources */,
 				2FF70A2216CF75E40072D2B5 /* FirstViewController.xib in Resources */,
 				2FF70A2516CF75E40072D2B5 /* SecondViewController.xib in Resources */,
+				2FF70A3B16CF888D0072D2B5 /* ThirdViewController.xib in Resources */,
+				2FF70A4016CF88C10072D2B5 /* FourViewController.xib in Resources */,
+				2FF70A4516CF9B710072D2B5 /* FiveViewController.xib in Resources */,
+				2FF70A4E16CFA26C0072D2B5 /* SixViewController.xib in Resources */,
+				2FF70A5316CFA4140072D2B5 /* SevenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +247,11 @@
 				2FF70A0B16CF75E40072D2B5 /* AppDelegate.m in Sources */,
 				2FF70A1416CF75E40072D2B5 /* FirstViewController.m in Sources */,
 				2FF70A1B16CF75E40072D2B5 /* SecondViewController.m in Sources */,
+				2FF70A3A16CF888D0072D2B5 /* ThirdViewController.m in Sources */,
+				2FF70A3F16CF88C10072D2B5 /* FourViewController.m in Sources */,
+				2FF70A4416CF9B710072D2B5 /* FiveViewController.m in Sources */,
+				2FF70A4D16CFA26C0072D2B5 /* SixViewController.m in Sources */,
+				2FF70A5216CFA4140072D2B5 /* SevenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

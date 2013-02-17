@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "AppDelegate.h"
+#import "ThirdViewController.h"
 
 @interface FirstViewController ()
 
@@ -35,5 +37,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark UITableViewDataSource Methods
+
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
+    if (nil == cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+#pragma mark UITableViewDelegate Methods
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    ThirdViewController *third = [[ThirdViewController alloc] init];
+    [delegate.navController1 pushViewController:third animated:YES];
+}
+
 
 @end
