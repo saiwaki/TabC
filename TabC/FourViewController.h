@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FourViewController : UIViewController
-- (IBAction)backButton:(id)sender;
+
 - (IBAction)closeButton:(id)sender;
 
 @end

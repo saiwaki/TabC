@@ -30,7 +30,7 @@
     //Tab
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[_navController1, _navController2, _navController7];
-    
+        
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

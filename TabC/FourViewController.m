@@ -35,9 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)backButton:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 - (IBAction)closeButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];

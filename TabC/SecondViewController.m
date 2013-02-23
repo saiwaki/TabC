@@ -89,6 +89,21 @@
     [av show];
 }
 
+- (IBAction)pullDownButton:(id)sender {
+    tbb = [[UITableView alloc] init];
+    tbb.frame = CGRectMake(0, -200, 320, 100);
+    tbb.delegate = self;
+    tbb.dataSource = self;
+    [self.view addSubview:tbb];
+
+    
+    [UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.3];
+	[UIView setAnimationDelegate:self];
+	tbb.frame = CGRectMake(0, 0, 320, 100);
+	[UIView commitAnimations];
+}
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     switch (buttonIndex) {
         case 1: // Button1が押されたとき
@@ -105,6 +120,28 @@
     }
 }
 
+- (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
+    if (nil == cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"aaaaa";
+    } else if (indexPath.row == 1){
+        cell.textLabel.text = @"bbbbb";
+    }else {
+        cell.textLabel.text = @"ccccc";
+    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end

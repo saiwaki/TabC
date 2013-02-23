@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdViewController : UIViewController
+@interface ThirdViewController : UIViewController <UITextFieldDelegate,UITextViewDelegate>
+
 - (IBAction)nextButton:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField *fieldText;
+@property (strong, nonatomic) IBOutlet UITextView *fieldViewText;
 
 @end

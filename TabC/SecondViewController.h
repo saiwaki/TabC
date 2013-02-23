@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController <UIActionSheetDelegate> {
+@interface SecondViewController : UIViewController <UIActionSheetDelegate, UITableViewDataSource, UITableViewDelegate> {
     UIActionSheet *as;
     UIAlertView *av;
+    UITableView *tbb;
 }
 
 - (IBAction)modalButton:(id)sender;
 - (IBAction)nextButton:(id)sender;
 - (IBAction)acionsheetButton:(id)sender;
 - (IBAction)alertButton:(id)sender;
+- (IBAction)pullDownButton:(id)sender;
 
 
 
