@@ -19,6 +19,7 @@
 - (IBAction)acionsheetButton:(id)sender;
 - (IBAction)alertButton:(id)sender;
 - (IBAction)pullDownButton:(id)sender;
+- (IBAction)axtButton:(id)sender;
 
 
 

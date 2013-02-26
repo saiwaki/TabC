@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SixViewController : UIViewController
+@interface SixViewController : UIViewController <NSURLConnectionDelegate>
 
 @end

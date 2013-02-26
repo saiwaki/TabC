@@ -95,13 +95,20 @@
     tbb.delegate = self;
     tbb.dataSource = self;
     [self.view addSubview:tbb];
-
     
     [UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.3];
 	[UIView setAnimationDelegate:self];
 	tbb.frame = CGRectMake(0, 0, 320, 100);
 	[UIView commitAnimations];
+}
+
+- (IBAction)axtButton:(id)sender {
+    UIActionSheet *popupQuery = [[UIActionSheet alloc]init];
+    popupQuery.delegate = self;
+    [popupQuery setFrame:CGRectMake(0, 100, 320, 220)];
+    [popupQuery showInView:self.view.window];
+
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

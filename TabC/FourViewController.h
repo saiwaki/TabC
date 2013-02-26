@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourViewController : UIViewController
+@interface FourViewController : UIViewController<UIWebViewDelegate>
 
 - (IBAction)closeButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIWebView *wv;
+@property (strong, nonatomic) IBOutlet UIToolbar *toolBar;
 
 @end

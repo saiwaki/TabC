@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SevenViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>{
+@interface SevenViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, NSURLConnectionDelegate>{
     IBOutlet UITextField *ttF;
 }
 

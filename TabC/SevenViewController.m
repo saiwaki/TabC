@@ -7,6 +7,7 @@
 //
 
 #import "SevenViewController.h"
+#import "AppDelegate.h"
 
 @interface SevenViewController ()
 
@@ -30,9 +31,25 @@
 {
 //    UIPickerView *piv = [[UIPickerView alloc]init];
     
+
+    NSString *urlstr = @"http://localhost:3000/boards";
+    NSURL *url = [NSURL URLWithString:urlstr];
+    NSData *myreqData = [@"board=aaa" dataUsingEncoding:NSUTF8StringEncoding];
+    NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:url];
+    [req setHTTPMethod:@"POST"];
+    [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [req setHTTPBody:myreqData];
+//    NSURLConnection *conn = [NSURLConnection connectionWithRequest:req delegate:self];
+    
+//    if (conn) {
+//        NSLog(@"start");
+//    }
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -65,8 +82,10 @@ numberOfRowsInComponent:(NSInteger)component{
     
     if (!self.navigationItem.rightBarButtonItem) {
         UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
-        [self.navigationItem setRightBarButtonItem:doneButton animated:YES];        
+        [self.navigationItem setRightBarButtonItem:doneButton animated:YES];
     }
+    
+    [self sendPostRequest];
 }
 
 - (void)hidePicker {
@@ -101,8 +120,17 @@ numberOfRowsInComponent:(NSInteger)component{
     }else{
         return YES;
     }
+}
+
+- (void) sendPostRequest {
 
 }
 
+
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    NSLog(@"%@",json);
+}
 
 @end

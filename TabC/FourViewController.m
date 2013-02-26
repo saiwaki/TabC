@@ -14,6 +14,9 @@
 
 @implementation FourViewController
 
+@synthesize wv = _wv;
+@synthesize toolBar = _toolBar;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,8 +29,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.toolBar.barStyle = UIBarStyleBlack;
+    self.toolBar.translucent = YES;
+    
     // Do any additional setup after loading the view from its nib.
+    NSURL *url = [NSURL URLWithString:@"http://club.pipet.sc/nodaten/"];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [self.wv loadRequest:req];
 }
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -279,7 +279,6 @@
 						<string key="NSFrame">{{225, 263}, {73, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -378,6 +377,15 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">122</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">axtButton:</string>
+						<reference key="source" ref="400378657"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">128</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -491,7 +499,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">127</int>
+			<int key="maxID">128</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -501,6 +509,7 @@
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="acionsheetButton:">id</string>
 						<string key="alertButton:">id</string>
+						<string key="axtButton:">id</string>
 						<string key="modalButton:">id</string>
 						<string key="nextButton:">id</string>
 						<string key="pullDownButton:">id</string>
@@ -512,6 +521,10 @@
 						</object>
 						<object class="IBActionInfo" key="alertButton:">
 							<string key="name">alertButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="axtButton:">
+							<string key="name">axtButton:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="modalButton:">
